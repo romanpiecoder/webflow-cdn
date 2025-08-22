@@ -11,7 +11,7 @@
         console.log("Button clicked, sending webhook...");
   
         try {
-          const res = await fetch("https://YOUR-N8N-URL/webhook/test", {
+          const res = await fetch("https://n8n-20r4.onrender.com/webhook/test", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: "Hello from Webflow -> CDN -> n8n" })
